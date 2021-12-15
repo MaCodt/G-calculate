@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>G calculate</title>
+
+</head>
+
+
+
+<body>
+
+
+
+    <div class="parent">
+
+        <div class="child7 item1-header">
+
+        </div>
+
+
+        <div class="child7 item2">
+            <div class="form0">
+
+
+
+
+                <div class="form">
+                    <center>
+                        <h1 style="background-color: #6FA6CB; color: #ffffff">Калькулятор массового расхода воздуха:
+                        </h1>
+                    </center>
+
+                    <div>
+                        <div class="form-group-lg" style="margin:10px 10px 10px 10px">
+
+                            <span id="pole_1" style="font-size: 20px; font-weight: 700"> Введите значение плотности
+                                потока на входе в модель, </span><span>кг/м^3</span>
+                            <br>
+                            <input id="ro-in" value="" type="number" min="0" step="0.1" size="10" name="G_potoka"
+                                class="form-control" style="color: #147baf; font-size: 20px; font-weight: 700"
+                                id="G_potoka" oninput="calculate(); 
+          pole_form_1 = 1; go_down();">
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div>
+                        <div class="form-group-lg" style="margin:10px 10px 10px 10px;">
+
+                            <span id="pole_2" style="font-size: 20px; font-weight: 700"> Введите значение перепада
+                                давлений на расходомерной шайбе, установленной на входящем в модель воздухопроводе,
+                            </span>мм.вод.ст.<span></span>
+                            <br>
+                            <input id="dp-in" value="" type="number" min="0" step="1" name="d_trubi"
+                                class="form-control" style="color: #147baf; font-size: 20px; font-weight: 700"
+                                id="d_trubi" oninput="calculate(); 
+          pole_form_2 = 1; go_down();">
+
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div>
+                        <div class="form-group-lg" style="margin:10px 10px 10px 10px;">
+
+                            <span id="pole_3" style="font-size: 20px; font-weight: 700"> Введите значение тарировочного
+                                коэффициента
+                                расходомерной шайбы, установленной на входящем в модель воздухопроводе</span>
+                            <br>
+                            <input id="k-in" value="" type="number" min="0" step="0.001" name="d_trubi"
+                                class="form-control" style="color: #147baf; font-size: 20px; font-weight: 700"
+                                id="d_trubi" oninput="calculate(); 
+          pole_form_3 = 1; go_down();">
+
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+            <div id="elem" class="myButton1">РАССЧИТАТЬ</div>
+
+            <br>
+            <br>
+            <br>
+
+            <div id="demo" class="output"></div>
+
+        </div>
+
+        <div class="child7 item3">Copyright ©2021 All rights reserved | MaCodt </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+    <body>
+
+</html>
